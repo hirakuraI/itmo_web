@@ -8,6 +8,7 @@
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/performance.js"></script>
+    <script src="js/callback.js"></script>
     <title>HiraStore</title>
 </head>
 <body>
@@ -23,38 +24,23 @@
         </ul>
     </nav>
 </header>
-<body>
-<div class="contacts-container">
-    <div class="contact-block">
-        <div class="image-block">
-            <img src="images/contacts/Kowalski.jpg">
-            <p class="contact-info">KAWAZAKI  +9(288)1337-25-21</p>
-        </div>
+
+<form id="callback-form">
+    <div>
+        <label for="fullname">ФИО:</label>
+        <input type="text" id="fullname" name="fullname" required>
     </div>
-    <div class="contact-block">
-        <div class="image-block">
-            <img src="images/contacts/shkiper.jpg">
-            <p class="contact-info">ESTRIPER  +9(288)1337-25-22</p>
-        </div>
+    <div>
+        <label for="phone">Номер телефона:</label>
+        <input type="text" id="phone" name="phone" required>
     </div>
-    <div class="contact-block">
-        <div class="image-block">
-            <img src="images/contacts/rico.jpg">
-            <p class="contact-info">CRICO +9(288)1337-25-23</p>
-        </div>
+    <div>
+        <label for="call-time">Желаемое время звонка:</label>
+        <input type="text" id="call-time" name="call-time">
     </div>
-    <div class="contact-block">
-        <div class="image-block">
-            <img src="images/contacts/ryadovoi.jpg">
-            <p class="contact-info">CAGO  +9(288)1337-25-24</p>
-        </div>
-    </div>
-</div>
-    <footer class="footer">
-        <div class="footer-copy-mark">HiraStore &copy; 2021</div>
-        <div class="footer-contacts">+8(999)999-99-99</div>
-        <div class="performance">Load time</div>
-    </footer>
-    <script src="js/active_menu_item_finder.js"></script>
+    <button type="submit">Отправить</button>
+</form>
+
+<div id="result-container"></div>
 </body>
 </html>
