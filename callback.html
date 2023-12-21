@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Arseniy Mukhin aka Hirakura">
+    <meta name="keywords" content="одежда, интернет-магазин, мода, стиль, винтаж">
+    <meta name="description" content="Интернет-магазин современной и винтажной одежды">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/performance.js"></script>
+    <script src="js/callback.js"></script>
+    <title>HiraStore</title>
+</head>
+<body>
+<header class="page-header">
+    <h1>Добро пожаловать в HiraStore</h1>
+    <nav class="nav">
+        <ul class="nav-ul">
+            <li class="nav-ul-item"><a class="nav-link" href="index.html"><b>Главная</b></a></li>
+            <li class="nav-ul-item"><a class="nav-link" href="catalog.html"><b>Каталог</b></a></li>
+            <li class="nav-ul-item"><a class="nav-link" href="sales.html"><b>Распродажа</b></a></li>
+            <li class="nav-ul-item"><a class="nav-link" href="contacts.html"><b>Контакты</b></a></li>
+            <li class="nav-ul-item"><a class="nav-link" href="callback.html"><img src="images/callback-icon.png"></a></li>
+        </ul>
+    </nav>
+</header>
+
+<form id="callback-form">
+    <div>
+        <label for="fullname">ФИО:</label>
+        <input type="text" id="fullname" name="fullname" required>
+    </div>
+    <div>
+        <label for="phone">Номер телефона:</label>
+        <input type="text" id="phone" name="phone" required>
+    </div>
+    <div>
+        <label for="call-time">Желаемое время звонка:</label>
+        <input type="text" id="call-time" name="call-time">
+    </div>
+    <button type="submit">Отправить</button>
+</form>
+
+<div id="result-container"></div>
+</body>
+</html>
