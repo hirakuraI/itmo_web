@@ -194,8 +194,8 @@
     text-align: center;
     font-family: Arial, sans-serif;
     padding: 10px;
-    background-color: #f0f0f0;
     position: absolute;
+    background-color: #f0f0f0;
     bottom: 0;
     width: 100%;
 }
@@ -245,6 +245,31 @@
     margin-top: 20px;
     border: 1px solid #ccc;
     padding: 10px;
+}
+
+.red-button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.preloader {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    margin: 30px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 @media screen and (max-width: 767px) {
