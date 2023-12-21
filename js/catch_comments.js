@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function () {
     fetchButton.addEventListener('click', fetchData);
 
     function fetchData() {
-        const commentId = Math.ceil(Math.random() * 500);
-        const apiUrl = `https://jsonplaceholder.typicode.com/comments?commentId=${commentId}`;
+        const commentId = Math.ceil(Math.random() * 100) + 1;
+        const apiUrl = `https://jsonplaceholder.typicode.com/comments?id=${commentId}`;
 
         preloader.style.display = 'block';
 
@@ -30,10 +30,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function renderData(data) {
-        const { email, body: comment } = data;
         contentContainer.innerHTML = `
-        <div><strong>Email:</strong> ${email}</div>
-        <div><strong>Comment:</strong> ${comment}</div>
+        <div><strong>Email:</strong> ${data[0].email}</div>
+        <div><strong>Comment:</strong> ${data[0].body}</div>
     `;
     }
 
