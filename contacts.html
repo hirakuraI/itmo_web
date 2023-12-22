@@ -7,6 +7,12 @@
     <meta name="description" content="Интернет-магазин современной и винтажной одежды">
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/performance.js"></script>
     <title>HiraStore</title>
 </head>
@@ -24,37 +30,90 @@
     </nav>
 </header>
 <body>
-<div class="contacts-container">
-    <div class="contact-block">
-        <div class="image-block">
-            <img src="images/contacts/Kowalski.jpg">
-            <p class="contact-info">KAWAZAKI  +9(288)1337-25-21</p>
+<!--<div class="contacts-container">-->
+<!--    <div class="contact-block">-->
+<!--        <div class="image-block">-->
+<!--            <img src="images/contacts/Kowalski.jpg">-->
+<!--            <p class="contact-info">KAWAZAKI  +9(288)1337-25-21</p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="contact-block">-->
+<!--        <div class="image-block">-->
+<!--            <img src="images/contacts/shkiper.jpg">-->
+<!--            <p class="contact-info">ESTRIPER  +9(288)1337-25-22</p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="contact-block">-->
+<!--        <div class="image-block">-->
+<!--            <img src="images/contacts/rico.jpg">-->
+<!--            <p class="contact-info">CRICO +9(288)1337-25-23</p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="contact-block">-->
+<!--        <div class="image-block">-->
+<!--            <img src="images/contacts/ryadovoi.jpg">-->
+<!--            <p class="contact-info">CAGO  +9(288)1337-25-24</p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!-- Slider main container -->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <div class="contact-block">
+                <div class="image-block">
+                    <img src="images/contacts/Kowalski.jpg">
+                    <p class="contact-info">KAWAZAKI  +9(288)1337-25-21</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="contact-block">
+                <div class="image-block">
+                    <img src="images/contacts/shkiper.jpg">
+                    <p class="contact-info">ESTRIPER  +9(288)1337-25-22</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="contact-block">
+                <div class="image-block">
+                    <img src="images/contacts/rico.jpg">
+                    <p class="contact-info">CRICO +9(288)1337-25-23</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="contact-block">
+                <div class="image-block">
+                    <img src="images/contacts/ryadovoi.jpg">
+                    <p class="contact-info">CAGO  +9(288)1337-25-24</p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="contact-block">
-        <div class="image-block">
-            <img src="images/contacts/shkiper.jpg">
-            <p class="contact-info">ESTRIPER  +9(288)1337-25-22</p>
-        </div>
-    </div>
-    <div class="contact-block">
-        <div class="image-block">
-            <img src="images/contacts/rico.jpg">
-            <p class="contact-info">CRICO +9(288)1337-25-23</p>
-        </div>
-    </div>
-    <div class="contact-block">
-        <div class="image-block">
-            <img src="images/contacts/ryadovoi.jpg">
-            <p class="contact-info">CAGO  +9(288)1337-25-24</p>
-        </div>
-    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
 </div>
+
     <footer class="footer">
         <div class="footer-copy-mark">HiraStore &copy; 2021</div>
         <div class="footer-contacts">+8(999)999-99-99</div>
         <div class="performance">Load time</div>
     </footer>
     <script src="js/active_menu_item_finder.js"></script>
+    <script>
+        // Initialize Swiper
+        var swiper = new Swiper(".swiper-container", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 </html>
